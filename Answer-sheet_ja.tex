@@ -1,0 +1,46 @@
+%\newcommand{\Lvec}[1]{{\overrightarrow{\mathrm{#1}}}} %始点と終点を示したベクトルの表記
+%\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}} %式番号を丸で囲む
+\newcommand{\dis}{\displaystyle} %∑，∫，分数などを圧縮しない
+\newcommand{\Image}[4]{
+\centering
+\includegraphics[#1]{#2}
+\caption{#3}
+\label{#4}
+} %図や写真の挿入。\caption[*]は目次における図の名前。\sectionも同様。
+%\newcommand{\det}[1]{\mathrm{det}} %行列式
+%\newcommand{\Real}[1]{\mathrm{Re}{(#1)}} %実部
+%\newcommand{\Imag}[1]{\mathrm{Im}{(#1)}} %虚部
+
+\documentclass[uplatex]{jsarticle}
+\usepackage{amsmath,amssymb,enumerate,fancybox}
+\usepackage{mathtools} %式番号を使うヤツだけつける
+\mathtoolsset{showonlyrefs=true} %mathtoolsとセットで
+%\usepackage{color} %文字に色を付ける
+%\usepackage{ulem} %上線下線波線打消し線
+%\usepackage{udline} %上に同じ
+%\usepackage{bm} %ベクトルをイタリック体のまま太字にする
+%\usepackage{url} %参考文献にURLを使う場合
+%\usepackage{ascmac} %文章を枠で囲む。shadeboxや
+%\usepackage{tikz} %グラフ描図
+%\usepackage{here} %画像挿入でHを使う
+%\usepackage[dvipdfmx]{graphicx} %画像や絵を挿入
+%\usepackage[dvipdfmx]{hyperref} %ハイパーリンク相互参照
+%\usepackage[version=3]{mhchem} %化学反応式を使う
+%\usepackage{qexam} %テスト作れる
+%\usepackage[]{multicol} %\begin{multicols}{*}で縦*列に分割
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+%\usepackage[margin=15mm]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\Large 名前：}
+\chead{\Large 得点：}
+\cfoot{}
+
+\begin{document}
+\noindent \Large 問番号 \\
+\noindent {\setlength{\fboxsep}{0.7 cm}\fbox{}}
+
+%\noindent 得点 \\
+%\noindent {\setlength{\fboxsep}{1 cm}\fbox{}}
+\end{document}
